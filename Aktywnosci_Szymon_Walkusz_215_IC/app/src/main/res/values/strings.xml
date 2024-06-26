@@ -1,0 +1,15 @@
+<resources>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="app_name">Aktywnosci_Szymon_Walkusz_215_IC</string>
+    <string name="sort1">Sortowanie bąbelkowe</string>
+    <string name="sort2">Sortowanie przez selekcję</string>
+    <string name="sortButton">Sortuj</string>
+    <string name="oldChain">Stary ciąg</string>
+    <string name="sortedChain">Posortowany ciąg</string>
+    <string name="sortedMethod">Wybór metody sortowania</string>
+    <string name="hint_for_a_numeric_string">Wpisz ciąg liczbowy odzielony spacjami</string>
+    <string name="no_value_string">Brak danych do posortowania!</string>
+    <string name="incorrect_data">Wprowadzone dane są niepoprawne! Dozwolone są nieujemne liczby i spacje!</string>
+    <string name="powrot_do_strony_glwnej">Powrót do strony głównej</string>
+    <string name="description">Program sortujący przyjmuje do posortowania liczby całkowite odzielone spacjami</string>
+</resources>

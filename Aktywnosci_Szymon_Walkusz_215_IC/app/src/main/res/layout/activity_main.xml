@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#9403A9F4"
+        tools:context=".WejscieFragment">
+
+        <!-- TODO: Update blank fragment layout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/sortedButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="UselessParent">
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/description" />
+
+            <RadioGroup
+                android:id="@+id/sortMethodRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:checkedButton="@id/sort1RadioButton">
+
+                <RadioButton
+                    android:id="@+id/sort1RadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="@string/sort1"
+                    tools:ignore="VisualLintButtonSize" />
+
+                <RadioButton
+                    android:id="@+id/sort2RadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sort2"
+                    tools:ignore="VisualLintButtonSize" />
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/inputField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:digits="0123456789 \n"
+                android:ems="10"
+                android:hint="@string/hint_for_a_numeric_string"
+                android:importantForAutofill="no"
+                android:inputType="number|text"
+                android:textColorHint="#37474F"
+                tools:ignore="TouchTargetSizeCheck,VisualLintTextFieldSize" />
+
+            <Button
+                android:id="@+id/sortedButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sortButton"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="VisualLintButtonSize" />
+        </LinearLayout>
+
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
